@@ -1,0 +1,169 @@
+$heading-font:    'Marcellus', serif;
+$paragraph-font:    'Open Sans', sans-serif;
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+
+$font-12: 12px;
+$font-13: 13px;
+$font-14: 14px;
+$font-16: 16px;
+$font-17: 17px;
+$font-18: 18px;
+$font-19: 19px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-26: 26px;
+$font-28: 28px;
+$font-30: 30px;
+$font-36: 36px;
+$font-48: 48px;
+$font-44: 44px;
+$font-50: 50px;
+$font-60: 60px;
+
+$primary-color: #D58F76;
+$second-color: #1A1744;
+$body-color: #999999;
+$bg_primary_color:  #A15547;
+$border_color: #EBD8D1;
+$border_right_color: #A4736A;
+$header_btn_bg: #F8DED5;
+$header_btn_color: #814439;
+$form_paragraph_color: #818E9D;
+$footer_bg: #0D0C23;
+$service_border_color: #EFD7CE;
+$service_hover_overlay: #904437;
+$service_inner_overlay: #5A1D12;
+$input_bg_color: #393663;
+$footer_nav_font: #9398AF;
+$light_grey: #F4F1EC;
+$list_bg: #E8CDC4;
+$portfolio_border: #D9D9D9;
+$portfolio_nav_border: #323055;
+$newsletter_bg: #934435;
+$newsletter_form: rgba(249, 246, 242, .2);
+$page_header_bg: #131137;
+$about_inner_para_color: #CACFEB;
+$case_details_title: #00234B;
+$case_sidebar_phone_bg: #DCCDB5;
+$input_two: #F0E3D7;
+$primary-color-30: rgba(213, 143, 118, .3);
+$header_border: rgba(235, 216, 209, .3);
+$team_bg: #FAF7F6;
+
+$white-color: #ffffff;
+$black-color: #000000;
+$dark-color: #222222;
+
+
+
+.theme-color{
+    color: $second-color;
+}
+.dark_version_bg{
+  background: #130F36 !important;
+}
+.dark_version_bg_two{
+  background: #0E0B27;
+}
+
+$facebook-color: #345895;
+$twitter-color: #00a0ee;
+$dribbble-color: #a99df5;
+$instagram-color: #4c57ea;
+$skype-color: #00aff0;
+$linkedin-color: #2867b2;
+$rss-color: #8265ff;
+$pinterest-color: #ff081e;
+
+$breakpoint-largedesktop: 1199px;
+$breakpoint-desktop: 991px;
+$breakpoint-tablet: 767px;
+$breakpoint-mobile: 600px;
+$breakpoint-minimobile: 500px;
+
+.overlay{
+    position: absolute; /* Sit on top of the page content */
+  opacity: 0; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0F1530; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+h1{
+  font-size: 128px;
+}
+h2{
+  font-size: 68px;
+}
+h3{
+  font-size: 44px;
+}
+h4{
+  font-size: 36px;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 16px;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+@media (min-width: 1200px){
+  .container {
+      max-width: 1170px;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  position: relative;
+  font-family: $paragraph-font;
+  font-size: $font-18;
+  line-height: 30px;
+  color: $body-color;
+  overflow-x: hidden;
+  webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main_wrapper{
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $heading-font;
+  font-weight: $font-regular;
+  margin: 0px;
+}
+
+a{
+  color: $second-color;
+  text-decoration: none;
+  outline: none;
+}
+a:hover{
+  color: $second-color;
+  text-decoration: none;
+  outline: none;
+}

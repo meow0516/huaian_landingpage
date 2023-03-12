@@ -1,0 +1,169 @@
+.contact_form{
+  background: url(../images/bg_form.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $second-color;
+  border-radius: 15px;
+  padding: 80px 0 85px 0;
+  position: relative;
+  z-index: 9;
+  .heading_common{
+    margin-bottom: 35px;
+  }
+  .form-control{
+    height: 58px;
+    background: $input_bg_color;
+    color: $white-color;
+    font-size: 16px;
+    line-height: 30px;
+    border-color: transparent;
+    border-radius: 5px;
+    padding-left: 25px;
+  }
+  textarea.form-control {
+    height: 150px;
+  }
+  .form-group{
+    ::-webkit-input-placeholder { /* Edge */
+        color: $form_paragraph_color;
+        font-weight: $font-regular;
+        font-family: $paragraph-font;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -.18px;
+      }
+    }
+    
+    ::-webkit-input-placeholder { 
+      color: $form_paragraph_color;
+      font-weight: $font-regular;
+      font-family: $paragraph-font;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: -.18px;
+  }
+  ::-moz-placeholder { 
+    color: $form_paragraph_color;
+    font-weight: $font-regular;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -.18px;
+  }
+  :-ms-input-placeholder { 
+    color: $form_paragraph_color;
+    font-weight: $font-regular;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -.18px;
+  }
+  :-moz-placeholder { 
+    color: $form_paragraph_color;
+    font-weight: $font-regular;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -.18px;
+  }
+  :placeholder { 
+    color: $form_paragraph_color;
+    font-weight: $font-regular;
+    font-family: $paragraph-font;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -.18px;
+  }
+}
+.contact_inner{
+  padding: 150px 0 100px 0;
+  .contact_box{
+      background: $white-color;
+      /*border-radius: 40px;
+      filter: drop-shadow(0 -2.5px -7.6px rgba(226, 200, 191, 0.2));*/
+      filter: drop-shadow(0 -2.5px 7.6px rgba(226, 200, 191, 0.2));
+      z-index: 1;
+      padding: 10px;
+      position: relative;
+      transition: all 0.4s ease;
+      overflow: hidden;
+      .service_inner{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        border: 1px solid $service_border_color;
+        padding: 29px 25px 34px 25px;
+        transition: all 0.5s ease;      
+        z-index: 2;
+        position: relative;
+        .content{
+          margin-left: 20px;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          transition: all 0.5s ease;
+          z-index: 4;
+          h4{
+            font-family: $heading-font;
+            font-weight: $font-regular;
+            font-size: 22px;
+            line-height: 24px;
+            letter-spacing: .45px;
+            color: $second-color;
+            margin-bottom: 12px;
+            transition: all 0.8s ease;
+          }
+          p{
+            font-family: $paragraph-font;
+            font-weight: $font-regular;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: .4px;
+            color: $body-color;
+            margin-bottom: 0;
+            transition: all 0.9s ease-in-out;
+          }
+        }
+        .image{
+          z-index: 3;
+          position: relative;
+          img{
+            width: 100%;
+          }
+        }
+      }
+  }
+  .form{
+    margin-top: 100px;
+    .contact_form input{
+      margin-bottom: 20px;
+    }
+  }
+  .contact_form .heading_common{
+    margin-bottom: 23px;
+  }
+}
+.gmapbox .map {
+  width: 100%;
+  height: 470px;
+  background-color: #ffeeee;
+}
+.form-control:focus{
+  background-color: unset;
+  color: $white-color;
+  border: 1px solid $primary-color;
+  box-shadow: none;
+  transition: all .5s ease-in-out;
+}
+.contact_form_page{
+  .btn_one{
+    padding: 16px 40px;
+  }
+}
+.form_margin{
+  margin-top: -470px; 
+  margin-bottom: 125px;
+}

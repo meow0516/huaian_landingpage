@@ -1,0 +1,268 @@
+.portfolio{
+  background: url(../images/portfolio_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 120px;
+  padding-bottom: 295px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $second-color;
+    top: 0;
+    opacity: .95;
+  }
+}
+.effect-classic{
+  margin-top: -255px;
+}
+/*------ Portfolio Grid ------*/
+.grid{
+  overflow: hidden;
+}
+.grid-item {
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  .thumb{
+    position: relative;
+    overflow: hidden;
+    .works_info_bg{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/portfolio/bg_1.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        animation: pulse 3s infinite;
+        transition: all 2.5s ease-in-out;
+        opacity: 0;
+      }
+      &::after     {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/portfolio/bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        right: 0;
+        animation: pulse 3s infinite;
+        transition: all 2.5s ease-in-out;
+        opacity: 0;
+      }
+    }
+    .works-info{
+      background: $header_btn_color;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: table;
+      align-items: center;
+      padding: 10px;
+      opacity: 0;
+      transform: translateY(100%);
+      animation: 0.5s ease-in-out 0s normal none 1 running slideOutDown;
+      transition: all 0.5s ease-in-out;
+      .label-text{
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        border: 1px solid $primary-color;
+        height: 100%;
+        vertical-align: middle;
+        display: table-cell;
+        padding: 0 20px;
+        transform: translateY(350px);
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+        h4{
+          font-size: 24px;
+          line-height: 34px;
+          color: $white-color;
+          margin-bottom: 70px;
+          position: relative;
+          transition: all 1.5s ease-in-out;
+          &::after{
+            position: absolute;
+            content: "";
+            width: 120px;
+            height: 1px;
+            background: $portfolio_border;            
+            left: 50%;
+            bottom: -34px;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: all 4s ease-in-out;
+
+          }
+        }
+        h6{
+          color: $light_grey;
+          line-height: 22px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          a{
+            color: $white-color;
+          }
+        }
+      }
+    }
+    img{
+      width: 100%;
+    }
+    &:hover{
+      .works-info{
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-animation: 0.5s ease-in-out 0s normal none 1 running slideInDown;
+        animation: 0.5s ease-in-out 0s normal none 1 running slideInDown;
+        .label-text{
+          transform: translateY(0);
+          opacity: 1;
+          h4{
+            &::after{
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .works_info_bg{
+        &::after{
+          opacity: 1;
+        }
+        &::before{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/* clear fix */
+.grid:after {
+content: '';
+display: block;
+clear: both;
+}
+
+.grid-4 .grid-item, .grid-4 .grid-sizer  {width: 25%;}
+.grid-4 .grid-sizer.small {width: 1%;}
+
+/*-------- Filter Button ---------*/
+.portfolio-filters-content {
+  text-align: center;
+}
+.portfolio-filters-content .filters-button-group {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: inline-block;
+  border-bottom: 1px solid $portfolio_nav_border;
+  position: relative;
+}
+.portfolio-filters-content .filters-button-group .button {
+  background: none;    
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-family: $paragraph-font;
+  font-weight: $font-regular;
+  color: $white-color;
+  padding: 10px;
+  margin: 0px 80px 0 0;
+  letter-spacing: 3px;
+  line-height: 22px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  -o-transition: all .3s; 
+  -ms-transition: all .3s; 
+  -moz-transition: all .3s; 
+  -webkit-transition: all .3s; 
+  transition: all .3s;
+}
+.portfolio-filters-content .filters-button-group .button:last-child{
+  margin-right: 0;
+}
+.portfolio-filters-content .filters-button-group .button.is-checked, 
+.portfolio-filters-content .filters-button-group .button:hover {
+  color: $primary-color;
+  outline: none;
+  border-bottom: 2px solid $primary-color;
+}
+.portfolio-filters-content .filters-button-group .button sup{
+  font-size: 12px;
+  top: -.25em;
+  color: #987205;
+}
+.portfolio-filters-content .filters-button-group .button .filter-count{
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio-filters-content .filters-button-group .button.is-checked .filter-count{
+  opacity: 1;
+  visibility: visible;
+}
+
+.gutter-0 .grid-item {
+  padding: 0px;
+}
+.gutter-5 .grid-item {
+  padding: 5px;
+}
+.gutter-10 .grid-item {
+  padding: 10px;
+}
+.gutter-15 .grid-item {
+  padding: 15px;
+}
+.gutter-20 .grid-item {
+  padding: 20px;
+}
+.gutter-25 .grid-item {
+  padding: 25px;
+}
+.gutter-30 .grid-item {
+  padding: 30px;
+}
+.gutter-35 .grid-item {
+  padding: 35px;
+}
+.gutter-40 .grid-item {
+  padding: 40px;
+}
+.gutter-45 .grid-item {
+  padding: 45px;
+}
+.gutter-50 .grid-item {
+  padding: 50px;
+}
+.gutter-55 .grid-item {
+  padding: 55px;
+}
+.gutter-60 .grid-item {
+  padding: 60px;
+}
+.portfolio_inner{
+  padding-top: 100px;
+  .portfolio-filters-content .filters-button-group{
+    border-bottom: 1px solid $light_grey;
+    .button{
+      color: $second-color;
+    }
+    .button.is-checked{
+      color: $primary-color;
+    }
+  }
+}

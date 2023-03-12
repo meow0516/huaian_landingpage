@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*
+    [ Shortcode Stylesheet ]
+    <?xml version="1.0" encoding="UTF-8"?>
+
+    Theme Name: Lawreto- Lawreto Law Firm Html5 Template
+    Version: 1.0
+    Author: WPThemeBooster
+    Author URI: www.wpthemebooster.com
+    Description: This template usable to build website for Blogging.
+    Date: 12/07/2020
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#01  Fonts and Other Styles Import
+#02  Theme Reset Style
+#03  Others
+-----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import "sass_bootstrap/bootstrap";
+@import url('fonts/ionicons/css/ionicons.css');
+@import url('fonts/font-awesome/css/font-awesome.css');
+@import url('../plugins/menu/ma5-menu.css');
+@import url("../plugins/swiper/swiper-bundle.min.css");
+@import url('animate.min.css');
+@import url('../plugins/aos/aos.css');
+@import url('../plugins/preloader/preloader.css');
+
+
+@import 'variables';
+@import 'header';
+@import 'common';
+@import 'slider';
+@import 'service';
+@import 'form';
+@import 'about';
+@import 'portfolio';
+@import 'funfact';
+@import 'team';
+@import 'faq';
+@import 'blog';
+@import 'sidebar';
+@import 'footer';
+@import 'responsive';

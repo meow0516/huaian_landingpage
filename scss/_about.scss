@@ -1,0 +1,320 @@
+.about_one_padding{
+  padding: 312px 0 127px 0;
+}
+.about{
+  position: relative;
+  z-index: 1;
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(../images/abt.png);
+    bottom: 0;
+    height: 100%;
+    width: 639px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -1;
+  }
+  .btn_one{
+    padding: 16px 37px;
+  }
+  .contact_form .heading_common{
+    margin-bottom: 20px;
+  }
+  .heading_common{
+    padding: 0 15px;
+  }
+}
+.about_list{
+  margin-top: 20px;
+  ul{
+    padding-left: 0;
+    li{
+      display: flex;
+      p{
+        margin-left: 15px;
+        letter-spacing: -0.18px;
+        line-height: 30px;
+        font-weight: $font-regular;
+      }
+    }
+  }
+  .btn_one{
+    padding: 16px 48px;
+  }
+}
+.about_man_image{
+  position: relative;
+  .about_logo_image{
+    position: absolute;
+    top: 65px;
+    left: 100%;
+    transform: translateX(-25%);
+    width: 100%;
+    img{
+      &:last-child{
+        position: absolute;
+        left: -31px;
+        top: -31px;
+        /*animation: rotate 2s infinite;*/
+        animation:animCircle 15s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes animCircle{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+
+.about_inner{
+  padding: 120px 0;
+}
+.about_inner_heading{
+  text-align: center;
+  padding: 0 50px;
+  margin-bottom: 120px;
+  h3{
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -.18px;
+    color: $second-color;
+    margin-bottom: 50px;
+    span{
+      color: $primary-color;
+    }
+  }
+  h6{
+    position: relative;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2.4px;
+    display: -webkit-inline-box;
+    display: inline-box;
+    &::before{
+      position: absolute;
+      content: "";
+      background: $portfolio_border;
+      width: 67px;
+      height: 1px;
+      left: -86px;
+      top: 11px;
+    }
+  }
+}
+.about_inner_content{
+  .about_image{
+    position: relative;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+    .about_content{
+      background: $second-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding: 18px 30px;
+      h4{
+        color: $white-color;
+        font-size: 32px;
+        line-height: 56px;
+        letter-spacing: -.18px;
+      }
+      i{
+        background: $input_bg_color;
+        color: $white-color;
+        width: 53px;
+        height: 53px;
+        line-height: 53px;
+        border-radius: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .hover_about_content{
+    position: absolute;
+    top: 0;
+    background: $second-color;
+    width: 100%;
+    height: 100%;
+    padding: 40px 60px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/inner/3.png);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      -webkit-animation: pulse 3s infinite;
+      animation: pulse 3s infinite;
+      transition: all 2.5s ease-in-out;
+      opacity: 0;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/inner/4.png);
+      background-repeat: no-repeat;
+      background-position: center right;
+      right: 0;
+      top: 0;
+      -webkit-animation: pulse 3s infinite;
+      animation: pulse 3.5s infinite;
+      transition: all 2.5s ease-in-out;
+      opacity: 0;
+  }
+  .about_content_info{
+    position: relative;
+    z-index: 1;
+    h4{
+      font-size: 32px;
+      line-height: 56px;
+      letter-spacing: -.18px;
+      color: $white-color;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        background: $primary-color;
+        width: 128px;
+        height: 2px;
+        right: 5%;
+        bottom: 22px;
+      }
+    }
+    p{
+      font-weight: $font-regular;
+      letter-spacing: -.18px;
+      color: $about_inner_para_color;
+    }
+    .about_list{
+      ul{
+        li{
+          i{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+    }
+    &:hover{
+      .hover_about_content{
+        opacity: 1;
+        &::before{
+          opacity: 1;
+        }
+        &::after{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .about_team{
+    .team_heading_paragraph{
+      p{
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: -.18px;
+        font-family: $paragraph-font;
+        font-weight: $font-regular;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+    .heading_common{
+      p{
+        margin-top: 10px;
+      }
+    }
+  }
+  .about_team{
+    padding-bottom: 120px;
+  }
+  .about_two_padding{
+    padding: 120px 200px 120px 97px;
+  }
+  .about_two{
+    background: $bg_primary_color;
+    display: inline-block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    &::before{
+      position: absolute;
+      content: "";
+      background: url('../images/video_bg_3.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: .3;
+    }
+    .heading_common{
+      h5{
+        letter-spacing: 3.6px;
+        margin-bottom: 5px;
+      }
+      h4{
+        color: $white-color;
+        line-height: 46px;
+      }
+      p{
+        margin-top: 20px;
+        color: $white-color;
+      }
+    }
+    .about_list{
+      position: relative;
+      z-index: 9;
+      ul{
+        li{
+          color: $white-color;
+        }
+      }
+      .about_inner_heading{
+        text-align: left;
+        padding: 0 85px;
+        margin-bottom: 20px;
+        h6{
+          font-family: $paragraph-font;
+          font-size: 16px;
+          font-weight: $font-regular;
+          line-height: 26px;
+          letter-spacing: 2.4px;
+          color: $white-color;
+          &::before{
+            background: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .about_two{
+    .about_two_bg{
+      &::after{
+        z-index: 1;
+      }
+    }
+  }
+  .about.dark_version_bg_two{
+    .heading_common{
+      h4{
+        color: #fff;
+      }
+    }
+  }

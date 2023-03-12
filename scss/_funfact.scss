@@ -1,0 +1,79 @@
+.funfact{
+  position: relative;
+  text-align: center;
+  flex: 1;
+  img{
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h3{
+    font-size: 48px;
+    font-family: $heading-font;
+    color: $second-color;
+    font-weight: $font-regular;
+    line-height: 36px;
+  }
+  p{
+    font-weight: $font-semibold;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: $header_btn_color;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+}
+.funfact_all{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.funfact_bg{
+  background: url(../images/bg_fun.png);
+  padding: 133px 0;
+}
+.funfact_bg2{
+  background: url(../images/portfolio_bg.png);
+  padding: 133px 0;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    background: rgba(105, 44, 32, .7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+.funfact2{
+  position: relative;
+  text-align: center;
+  flex: 1;
+  img{
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h3{
+    font-size: 48px;
+    font-family: $heading-font;
+    color: $white-color;
+    font-weight: $font-regular;
+    line-height: 36px;
+  }
+  p{
+    font-weight: $font-semibold;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: $white-color;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
+}
