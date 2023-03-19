@@ -14786,7 +14786,7 @@ img {
   width: 50%;
   height: 50%;
   right: 0;
-  background-image: url(../images/inner/10.png);
+  /* background-image: url(../images/inner/10.png); */
   background-repeat: no-repeat;
   background-position: top right;
   -webkit-animation: pulse 3.5s infinite;
@@ -14802,7 +14802,7 @@ img {
   height: 70%;
   right: 0;
   bottom: -7px;
-  background-image: url(../images/inner/9.png);
+  /* background-image: url(../images/inner/9.png); */
   background-repeat: no-repeat;
   background-position: bottom right;
   z-index: -1;
@@ -15486,7 +15486,8 @@ img {
 }
 
 .about_one_padding {
-  padding: 312px 0 127px 0;
+  /* padding: 312px 0 127px 0; */
+  padding: 200px 0 127px 0;
 }
 
 .about {
@@ -15497,7 +15498,7 @@ img {
 .about::before {
   position: absolute;
   content: "";
-  background: url(../images/abt.png);
+  /* background: url(../images/abt.png); */
   bottom: 0;
   height: 100%;
   width: 639px;
@@ -15910,7 +15911,7 @@ img {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url(../images/portfolio/bg_1.png);
+  /* background-image: url(../images/portfolio/bg_1.png); */
   background-repeat: no-repeat;
   background-position: right bottom;
   -webkit-animation: pulse 3s infinite;
@@ -15925,7 +15926,7 @@ img {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url(../images/portfolio/bg.png);
+  /* background-image: url(../images/portfolio/bg.png); */
   background-repeat: no-repeat;
   background-position: right;
   right: 0;
@@ -16357,7 +16358,8 @@ img {
 .faq::before {
   position: absolute;
   content: "";
-  background: url(../images/inner/faq_image.png);
+  /* background: url(../images/inner/faq_image.png); */
+  background: url(../images/3D3A8316.jpg);
   width: 45%;
   height: 100%;
   background-position: 30%;
@@ -17936,13 +17938,14 @@ img {
 }
 
 .footer .footer_above {
-  background: url("../images/footer_bg.png");
+  /* background: url("../images/footer_bg.png"); */
+  background-color: dimgrey;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #0D0C23;
+  /* background-color: #0D0C23; */
 }
 
 .footer .footer_above .subscribe {
