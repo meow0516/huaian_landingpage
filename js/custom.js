@@ -135,10 +135,25 @@
         loop: true,
         slidesPerView: 1,
         spaceBetween: 20,
+        autoHeight: true,
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 15
+            }
         },
         pagination: {
             el: '.swiper-pagination',
