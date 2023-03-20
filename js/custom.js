@@ -131,6 +131,7 @@
 
     // Swiper: Slider
     new Swiper('.swiper_testimonial .swiper', {
+        autoplay: true,
         loop: true,
         slidesPerView: 1,
         spaceBetween: 20,
