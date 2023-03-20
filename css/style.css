@@ -15330,7 +15330,7 @@ img {
 
 .service_bg .service_another_bg::before {
     position: absolute;
-    content: "";
+    /* content: ""; */
     background-image: url(../images/service_bg.png);
     background-repeat: no-repeat;
     background-position: right top;
@@ -15344,7 +15344,7 @@ img {
 
 .service_bg::before {
     position: absolute;
-    content: "";
+    /* content: ""; */
     background-image: url(../images/service_3_bg.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -15358,7 +15358,7 @@ img {
 
 .service_bg::after {
     position: absolute;
-    content: "";
+    /* content: ""; */
     background-image: url(../images/service_2_bg.png);
     background-repeat: no-repeat;
     background-position: top right;
