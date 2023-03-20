@@ -18749,16 +18749,16 @@ img {
 
 .side_footer_social .bottom_social li a {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 15px;
     text-align: center;
     color: #fff;
-    background: #D58F76;
+    /* background: #D58F76; */
     display: block;
     outline: none;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     border-radius: 100%;
 }
 
