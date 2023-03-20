@@ -170,6 +170,7 @@
         $(this).addClass("active").siblings().removeClass("active");
     });
 
+    $(".accordion.disabled").unbind('click');
 
 
     // Isotope Portfolio
