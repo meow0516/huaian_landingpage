@@ -15751,7 +15751,7 @@ img {
 }
 
 .contact_inner {
-    padding: 150px 0 100px 0;
+    padding: 100px 0 100px 0;
 }
 
 .contact_inner .contact_box {
@@ -16771,7 +16771,7 @@ img {
     background: url(../images/3D3A8316.jpg);
     width: 45%;
     height: 100%;
-    background-position: 30%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
