@@ -12908,7 +12908,11 @@ a:hover {
     flex-grow: 1;
     -ms-flex-negative: 1;
     flex-shrink: 1;
-    border-left: 1px solid #EBD8D1;
+    /* border-left: 1px solid #EBD8D1; */
+    border: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
 }
 
 .header .header_inner .header_right_content .header_top_content {
@@ -14109,6 +14113,7 @@ img {
     color: white;
     /* color: #1A1744; */
     flex-grow: 1;
+    text-align: left;
 }
 
 .testimonial_inner h6,
@@ -14124,6 +14129,8 @@ img {
     display: -webkit-inline-box;
     display: inline-box;
     align-self: flex-end;
+    width: 100%;
+    left: 80px;
 }
 
 .testimonial_inner h6::before,
@@ -15190,7 +15197,7 @@ img {
 }
 
 .slider .slider_content {
-    padding: 220px 0;
+    padding: 180px 0;
 }
 
 .slider .slider_content h6,
@@ -15766,6 +15773,7 @@ img {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     overflow: hidden;
+    height: 100%;
 }
 
 .contact_inner .contact_box .service_inner {
@@ -15778,6 +15786,7 @@ img {
     transition: all 0.5s ease;
     z-index: 2;
     position: relative;
+    height: 100%;
 }
 
 .contact_inner .contact_box .service_inner .content {
@@ -17066,6 +17075,7 @@ img {
 
 .blog_post .post_img img {
     width: 100%;
+    height: 300px;
 }
 
 .blog .heading_common {
