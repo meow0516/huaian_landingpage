@@ -18895,6 +18895,9 @@ img {
 /*-- max-width: 1199px--*/
 
 @media screen and (max-width: 1199px) {
+    .ma5menu--right.ma5menu--active:before {
+        background-color: unset;
+    }
     .slider .slider_content {
         padding: 95px 0;
     }
