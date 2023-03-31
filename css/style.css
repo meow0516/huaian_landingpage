@@ -18898,6 +18898,9 @@ img {
     .ma5menu--right.ma5menu--active:before {
         background-color: unset;
     }
+    .ma5menu__btn--enter {
+        width: 100%;
+    }
     .slider .slider_content {
         padding: 95px 0;
     }
