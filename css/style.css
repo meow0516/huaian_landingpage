@@ -12895,6 +12895,7 @@ a:hover {
     margin-right: 30px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    font-size: 1.3em;
 }
 
 .header .header_inner .header_logo .mobile {
@@ -16808,7 +16809,7 @@ img {
 }
 
 .faq .section_header {
-    padding-top: 150px;
+    padding-top: 50px;
     position: relative;
     z-index: 90;
 }
