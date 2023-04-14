@@ -75,7 +75,7 @@
 
     // Swiper: Slider
     new Swiper('.swiper_post .swiper', {
-        loop: true,
+        loop: false,
         slidesPerView: 1,
         spaceBetween: 0,
         // Navigation arrows
@@ -131,8 +131,8 @@
 
     // Swiper: Slider
     new Swiper('.swiper_testimonial .swiper', {
-        autoplay: true,
-        loop: true,
+        autoplay: false,
+        loop: false,
         slidesPerView: 1,
         spaceBetween: 20,
         autoHeight: true,
