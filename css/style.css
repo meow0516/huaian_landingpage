@@ -19332,3 +19332,7 @@ img {
     top: 0;
     position: sticky;
 }
+
+.noie.safari.ma5menu--right.has-body-scrollbar.ma5menu--ready.ma5menu--active body {
+    z-index: 9999;
+}
