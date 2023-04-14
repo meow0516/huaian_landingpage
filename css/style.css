@@ -14111,10 +14111,10 @@ img {
 }
 
 .testimonial_inner p {
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Marcellus", serif;
     font-weight: 400;
-    line-height: 36px;
+    /* line-height: 36px; */
     letter-spacing: -.18px;
     color: white;
     /* color: #1A1744; */
@@ -14138,6 +14138,7 @@ img {
     width: 100%;
     /* left: 80px; */
     padding-bottom: .5em;
+    text-align: left;
 }
 
 .testimonial_inner h6::before,
