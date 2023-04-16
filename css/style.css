@@ -14119,7 +14119,7 @@ img {
     color: white;
     /* color: #1A1744; */
     flex-grow: 1;
-    text-align: left;
+    text-align: justify;
 }
 
 .testimonial_inner h6,
@@ -15461,6 +15461,7 @@ img {
     margin-bottom: 8px;
     -webkit-transition: all 0.9s ease-in-out;
     transition: all 0.9s ease-in-out;
+    text-align: justify;
 }
 
 .service_box .service_inner .content .btn_service {
@@ -17043,6 +17044,7 @@ img {
     line-height: 26px;
     letter-spacing: -.18px;
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .blog_post .post_footer_flex {
