@@ -14137,7 +14137,7 @@ img {
     align-self: flex-end;
     width: 100%;
     /* left: 80px; */
-    padding-bottom: .5em;
+    padding-bottom: 3px;
     text-align: left;
 }
 
