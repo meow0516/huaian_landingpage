@@ -16,6 +16,8 @@
         closeOnBodyClick: true
     });
 
+    // disable submenu function
+    $('.ma5menu__btn--enter').unbind('click');
 
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 50) {
@@ -134,7 +136,7 @@
         autoplay: false,
         loop: false,
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 15,
         autoHeight: true,
         // Navigation arrows
         navigation: {
@@ -148,7 +150,7 @@
             },
             991: {
                 slidesPerView: 2,
-                spaceBetween: 30
+                spaceBetween: 15
             },
             1200: {
                 slidesPerView: 4,

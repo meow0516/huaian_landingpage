@@ -14068,6 +14068,15 @@ img {
 
 .swiper_testimonial .swiper-slide {
     align-self: stretch;
+    padding: 7px;
+}
+
+.swiper_testimonial .swiper-slide:nth-child(even) {
+    background: rgba(255, 255, 255, .2);
+}
+
+.swiper_testimonial .swiper-slide:nth-child(odd) {
+    background: rgba(0, 0, 0, .2);
 }
 
 .swiper_testimonial .swiper-slide .slider {
@@ -19337,4 +19346,20 @@ img {
 
 .noie.safari.ma5menu--right.has-body-scrollbar.ma5menu--ready.ma5menu--active body {
     z-index: 9999;
+}
+
+
+/* custom style for mobile menu */
+
+.ma5menu__btn--enter::before {
+    display: none;
+}
+
+.ma5menu__panel>ul li[data-ma5order="ma5-li-4"] a,
+.ma5menu__panel>ul li[data-ma5order="ma5-li-5"] a {
+    padding-left: 3em;
+}
+
+.menu-item.menu-item-has-children.mobile-only {
+    display: none;
 }
